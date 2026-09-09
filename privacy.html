@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="nn">
+<html lang="nb">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,38 +21,53 @@
 <h1>Personvern – Rekk ferja</h1>
 <p class="sub">Sist oppdatert 9. september 2026</p>
 
-<p>Rekk ferja samlar ikkje inn personopplysningar. Appen har ingen brukarkonto,
-ingen analyse og inga sporing.</p>
+<p>Rekk ferja samler ikke inn personopplysninger. Appen har ingen brukerkonto,
+ingen analyse og ingen sporing.</p>
 
 <h2>Posisjon</h2>
-<p>Appen brukar posisjonen din berre når appen er open. Han sporar deg ikkje i
+<p>Appen bruker posisjonen din bare når appen er åpen. Den sporer deg ikke i
 bakgrunnen. Posisjonen blir brukt til to ting:</p>
 <ul>
-  <li>Å finne ferjekaier i nærleiken.</li>
-  <li>Å rekne ut køyretida til kaia.</li>
+  <li>Å finne ferjekaier i nærheten.</li>
+  <li>Å regne ut kjøretiden til kaia.</li>
 </ul>
 
-<h2>Kva som blir sendt vidare</h2>
+<h2>Hva som blir sendt videre</h2>
 <ul>
-  <li><strong>Google Routes API</strong> får startpunkt og endepunkt, for å
-      rekne ut køyretid med trafikk.</li>
-  <li><strong>Entur</strong> får posisjonen din, for å finne kaier og avgangar
-      i nærleiken.</li>
-  <li><strong>Kartverket</strong> får berre søketeksten du skriv. Posisjonen
-      din blir ikkje sendt dit.</li>
+  <li><strong>Apple Kart</strong> får startpunkt og endepunkt, for å regne ut
+      kjøretiden. Dette er den vanlige kilden til kjøretid i appen, og
+      beregningen skjer gjennom Apples eget karttjeneste på telefonen.</li>
+  <li><strong>Google Routes API</strong> får startpunkt og endepunkt. Appen
+      spør Google når Apple Kart ikke svarer, og når du planlegger en reise
+      med flere ferjer.</li>
+  <li><strong>Entur</strong> får posisjonen din, for å finne kaier og avganger
+      i nærheten.</li>
+  <li><strong>Kartverket</strong> får bare søketeksten du skriver. Posisjonen
+      din blir ikke sendt dit.</li>
 </ul>
 
-<h2>Kva appen ikkje gjer</h2>
+<h2>Hva appen lagrer på telefonen</h2>
+<p>For at appen skal virke i tunneler og andre steder uten dekning, lagrer den
+det den sist hentet:</p>
 <ul>
-  <li>Appen lagrar ikkje posisjonen din.</li>
-  <li>Appen lagrar ikkje søka dine.</li>
-  <li>Appen har ingen brukarkonto og inga innlogging.</li>
-  <li>Appen har inga analyse, inga reklame og ingen sporingsbibliotek.</li>
-  <li>Utviklaren driv ingen server. Ingen data blir sende til utviklaren.</li>
+  <li>Rutetidene for de kaiene du har åpnet.</li>
+  <li>Listen over kaier i nærheten, og punktet listen ble hentet rundt.</li>
+</ul>
+<p>Dette blir liggende på telefonen din i inntil ett døgn, og blir slettet når
+du sletter appen. Ingenting av det blir sendt noe sted.</p>
+
+<h2>Hva appen ikke gjør</h2>
+<ul>
+  <li>Appen sender ikke posisjonen din til utvikleren.</li>
+  <li>Appen lagrer ikke søkene dine.</li>
+  <li>Appen har ingen brukerkonto og ingen innlogging.</li>
+  <li>Appen har ingen analyse, ingen reklame og ingen sporingsbibliotek.</li>
+  <li>Utvikleren driver ingen server. Ingen data blir sendt til utvikleren.</li>
 </ul>
 
-<h2>Tredjepartar</h2>
-<p>Desse tenestene behandlar data etter sine eigne vilkår:
+<h2>Tredjeparter</h2>
+<p>Disse tjenestene behandler data etter sine egne vilkår:
+<a href="https://www.apple.com/legal/privacy/">Apple</a>,
 <a href="https://policies.google.com/privacy">Google</a>,
 <a href="https://entur.no/personvern">Entur</a> og
 <a href="https://www.kartverket.no/om-kartverket/personvern">Kartverket</a>.</p>
@@ -79,17 +94,32 @@ in the background. It uses your location for two purposes:</p>
 
 <h2>What the app sends</h2>
 <ul>
+  <li><strong>Apple Maps</strong> receives a start point and an end point, to
+      calculate the drive time. This is the app's usual source for drive
+      times, and the request goes through Apple's own map service on the
+      phone.</li>
   <li><strong>Google Routes API</strong> receives a start point and an end
-      point, to calculate a traffic-aware drive time.</li>
+      point. The app asks Google when Apple Maps does not answer, and when you
+      plan a journey with several ferries.</li>
   <li><strong>Entur</strong> receives your location, to find nearby quays and
       departures.</li>
   <li><strong>Kartverket</strong> receives only the text that you type. It does
       not receive your location.</li>
 </ul>
 
+<h2>What the app stores on your phone</h2>
+<p>So that the app still works in a tunnel, or anywhere else without coverage,
+it keeps what it last fetched:</p>
+<ul>
+  <li>The timetables for the quays you have opened.</li>
+  <li>The list of nearby quays, and the point that list was gathered around.</li>
+</ul>
+<p>This stays on your phone for up to one day, and it goes away when you delete
+the app. None of it is sent anywhere.</p>
+
 <h2>What the app does not do</h2>
 <ul>
-  <li>The app does not save your location.</li>
+  <li>The app does not send your location to the developer.</li>
   <li>The app does not save your searches.</li>
   <li>The app has no user account and no sign-in.</li>
   <li>The app has no analytics, no advertising and no tracking libraries.</li>
@@ -98,6 +128,7 @@ in the background. It uses your location for two purposes:</p>
 
 <h2>Third parties</h2>
 <p>These services process data under their own terms:
+<a href="https://www.apple.com/legal/privacy/">Apple</a>,
 <a href="https://policies.google.com/privacy">Google</a>,
 <a href="https://entur.no/personvern">Entur</a> and
 <a href="https://www.kartverket.no/om-kartverket/personvern">Kartverket</a>.</p>
