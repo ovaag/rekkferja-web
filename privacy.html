@@ -50,11 +50,13 @@ blå indikator mens det pågår. Appen ber ikke om «Alltid»-tilgang til posisj
       i nærheten.</li>
   <li><strong>Kartverket</strong> får bare søketeksten du skriver. Posisjonen
       din blir ikke sendt dit.</li>
-  <li><strong>GitHub</strong> får en forespørsel etter en liten fil når appen
-      starter og når du åpner den igjen. Filen sier hvilken versjon av appen
-      som minst må brukes. Forespørselen inneholder ingenting om deg eller
+  <li><strong>GitHub</strong> får forespørsler etter to små filer. Den ene
+      hentes når appen starter og når du åpner den igjen, og sier hvilken
+      versjon av appen som minst må brukes. Den andre er en liste over
+      ferjepriser, og hentes høyst en gang i døgnet når du planlegger en
+      reise. Forespørslene inneholder ingenting om deg eller
       posisjonen din; GitHub ser IP-adressen, som ved alle nettforespørsler.
-      Utvikleren ser ikke hvem som har hentet filen.</li>
+      Utvikleren ser ikke hvem som har hentet filene.</li>
 </ul>
 
 <h2>Hva appen lagrer på telefonen</h2>
@@ -87,6 +89,11 @@ avgang det gjelder og når varselet skal komme. Varselet er et lokalt varsel
 som telefonen selv viser; det går ikke gjennom noen server. Appen spør om lov
 til å vise varsler første gang du ber om et, og har bare ett varsel om
 gangen. Det forsvinner når avgangen har gått, eller når du fjerner det.</p>
+
+<p>Kjøretøyet du velger under <strong>Ferjepris</strong> i Innstillingene, og
+om du har AutoPASS-avtale, lagres på telefonen og brukes bare til å vise
+riktig ferjepris. Listen over ferjepriser blir også liggende på telefonen,
+slik at den ikke må hentes på nytt hver gang.</p>
 <p>Alt dette blir slettet når du sletter appen, og ingenting av det blir sendt
 noe sted.</p>
 
@@ -146,11 +153,13 @@ left. iOS shows a blue indicator while it is happening. The app does not ask for
       departures.</li>
   <li><strong>Kartverket</strong> receives only the text that you type. It does
       not receive your location.</li>
-  <li><strong>GitHub</strong> receives a request for a small file when the app
-      starts and when you open it again. The file says the oldest version of
-      the app that may still be used. The request contains nothing about you
+  <li><strong>GitHub</strong> receives requests for two small files. One is
+      fetched when the app starts and when you open it again, and says the
+      oldest version of the app that may still be used. The other is a list
+      of ferry fares, fetched at most once a day when you plan a journey.
+      The requests contain nothing about you
       or your location; GitHub sees the IP address, as with any web request.
-      The developer cannot see who fetched the file.</li>
+      The developer cannot see who fetched the files.</li>
 </ul>
 
 <h2>What the app stores on your phone</h2>
@@ -184,6 +193,11 @@ reminder is a local notification shown by the phone itself; it does not pass
 through any server. The app asks for permission to show notifications the
 first time you ask for one, and keeps only one reminder at a time. It goes
 away once the departure has left, or when you remove it.</p>
+
+<p>The vehicle you choose under <strong>Ferjepris</strong> in Settings, and
+whether you have an AutoPASS agreement, are stored on the phone and used only
+to show the right ferry fare. The list of ferry fares is also kept on the
+phone, so it does not have to be fetched again every time.</p>
 <p>All of it goes away when you delete the app, and none of it is sent
 anywhere.</p>
 
