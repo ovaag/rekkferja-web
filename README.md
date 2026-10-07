@@ -6,7 +6,8 @@ private repository.
 This repository exists because App Store Connect needs public URLs:
 
 - `privacy.html` — the privacy policy URL, required for TestFlight external
-  review and for App Store submission.
+  review and for App Store submission. Live at
+  <https://ovaag.github.io/rekkferja-web/privacy.html>.
 - `index.html` — a landing page. It can also serve as the Support URL, which
   App Store submission requires.
 - `app-config.json` — read by the app at launch and on each return to the
