@@ -19,7 +19,7 @@
 <body>
 
 <h1>Personvern – Rekk ferja</h1>
-<p class="sub">Sist oppdatert 7. oktober 2026</p>
+<p class="sub">Sist oppdatert 13. oktober 2026</p>
 
 <p>Rekk ferja samler ikke inn personopplysninger. Appen har ingen brukerkonto,
 ingen analyse og ingen sporing.</p>
@@ -50,13 +50,16 @@ blå indikator mens det pågår. Appen ber ikke om «Alltid»-tilgang til posisj
       i nærheten.</li>
   <li><strong>Kartverket</strong> får bare søketeksten du skriver. Posisjonen
       din blir ikke sendt dit.</li>
-  <li><strong>GitHub</strong> får forespørsler etter to små filer. Den ene
-      hentes når appen starter og når du åpner den igjen, og sier hvilken
-      versjon av appen som minst må brukes. Den andre er en liste over
-      ferjepriser, og hentes høyst en gang i døgnet når du planlegger en
-      reise. Forespørslene inneholder ingenting om deg eller
-      posisjonen din; GitHub ser IP-adressen, som ved alle nettforespørsler.
-      Utvikleren ser ikke hvem som har hentet filene.</li>
+  <li><strong>Apple iCloud</strong> (den offentlige CloudKit-databasen) får
+      forespørsler etter to små filer. Den ene hentes når appen starter og
+      når du åpner den igjen, og sier hvilken versjon av appen som minst må
+      brukes. Den andre er en liste over ferjepriser, og hentes høyst en gang
+      i døgnet når du planlegger en reise. Forespørslene inneholder navnet på
+      filen og appens egen nøkkel, ingenting om deg eller posisjonen din, og du trenger
+      ikke være logget inn i iCloud. Apple ser IP-adressen, som ved alle
+      nettforespørsler. Utvikleren ser ikke hvem som har hentet filene.
+      Eldre versjoner av appen henter de samme filene fra
+      <strong>GitHub</strong>, på samme måte.</li>
 </ul>
 
 <h2>Hva appen lagrer på telefonen</h2>
@@ -120,7 +123,7 @@ noe sted.</p>
 <hr>
 
 <h1 lang="en">Privacy – Rekk ferja</h1>
-<p class="sub" lang="en">Last updated 7 October 2026</p>
+<p class="sub" lang="en">Last updated 13 October 2026</p>
 
 <div lang="en">
 <p>Rekk ferja collects no personal data. The app has no user account, no
@@ -153,13 +156,16 @@ left. iOS shows a blue indicator while it is happening. The app does not ask for
       departures.</li>
   <li><strong>Kartverket</strong> receives only the text that you type. It does
       not receive your location.</li>
-  <li><strong>GitHub</strong> receives requests for two small files. One is
-      fetched when the app starts and when you open it again, and says the
-      oldest version of the app that may still be used. The other is a list
-      of ferry fares, fetched at most once a day when you plan a journey.
-      The requests contain nothing about you
-      or your location; GitHub sees the IP address, as with any web request.
-      The developer cannot see who fetched the files.</li>
+  <li><strong>Apple iCloud</strong> (the public CloudKit database) receives
+      requests for two small files. One is fetched when the app starts and
+      when you open it again, and says the oldest version of the app that
+      may still be used. The other is a list of ferry fares, fetched at most
+      once a day when you plan a journey. The requests contain the name of the
+      file and the app's own key, nothing about you or your location, and you do not need
+      to be signed in to iCloud. Apple sees the IP address, as with any web
+      request. The developer cannot see who fetched the files. Older
+      versions of the app fetch the same files from <strong>GitHub</strong>,
+      in the same way.</li>
 </ul>
 
 <h2>What the app stores on your phone</h2>
